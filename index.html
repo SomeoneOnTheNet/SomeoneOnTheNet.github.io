@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Felices Vacaciones</title>
+    <style>
+        @font-face {
+            font-family: 'Chicken Pie';
+            src: url('/CHICKEN_Pie.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'Amazing Spiderman';
+            src: url('/The_Amazing_Spider-Man.ttf') format('truetype');
+        }
+        
+
+        body {
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: none;
+            object-fit: cover;
+        }
+
+        h1 {
+            color: #fff;
+            font-family: 'Amazing Spiderman';
+            font-size: 8em;
+            text-align: center;
+            z-index: 3;
+        }
+
+        .corner-text {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            z-index: 3;
+        }
+
+        .padrino {
+            color: blue;
+            font-family: 'Amazing Spiderman', sans-serif;
+        }
+
+        .man {
+            color: red;
+            font-family: 'Amazing Spiderman', sans-serif;
+        }
+
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 3em;
+            }
+
+            img {
+                height: 70%;
+            }
+
+            .corner-text {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>¡FELICES VACACIONES!</h1>
+    <img src="spidermans.gif">
+    <div class="corner-text">
+        - tu amigable vecino
+        <span class="padrino">padrino</span>-<span class="man">man</span>
+    </div>
+</body>
+</html>
